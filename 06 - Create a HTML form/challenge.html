@@ -2,6 +2,22 @@
 <html>
   <head>
     <title>06 - Create a HTML form</title>
+    <style>
+      label{
+        display: block;
+        margin: auto;
+      }
+    input{
+      display: block;
+    }
+    .last input{
+      display: inline;
+    }
+    form{
+      border: 2px solid blueviolet ;
+    }
+    </style>
+
   </head>
   <body>
     <!-- Add a form tag to your HTML page.  -->
@@ -14,5 +30,99 @@
     <!-- Add text between the opening and closing button tags that will be displayed on the button. -->
 
     <!-- READUP: HTML forms https://blog.codeskills.dev/html-forms -->
+    
+    <h1>All Common HTML</h1>
+
+    <!-- Basic -->
+     <form action="challenge.html" method="post">
+    <fieldset>
+        <legend>Basic</legend>
+        <label>Text (Name): <input type="text" placeholder="Full name"></label><br>
+        <label>Email: <input type="email" placeholder="user@example.com"></label><br>
+        <label>Password: <input type="password" placeholder="At least 8 characters"></label><br>
+        <label>Telephone: <input type="tel" placeholder="+250 7xx xxx xxx"></label><br>
+        <label>Search: <input type="search" placeholder="Search term"></label><br>
+        <label>URL: <input type="url" placeholder="https://example.com"></label>
+    </fieldset>
+
+    <!-- Numbers & Sliders -->
+    <fieldset>
+        <legend>Numbers & Sliders</legend>
+        <label>Number: <input type="number" value="0"></label><br>
+        <label>Range (0–10): <input type="range" min="0" max="10" value="5"> 5</label>
+    </fieldset>
+
+    <!-- Date & Time -->
+    <fieldset>
+        <legend>Date & Time</legend>
+        <label>Date: <input type="date"></label><br>
+        <label>Time: <input type="time"></label><br>
+        <label>Datetime (local): <input type="datetime-local"></label><br>
+        <label>Month: <input type="month"></label><br>
+        <label>Week: <input type="week"></label>
+    </fieldset>
+
+    <!-- Choices -->
+    <fieldset>
+        <legend>Choices</legend>
+        <label>Radio (Plan):</label><br>
+        <label><input type="radio" name="plan" checked> Basic</label>
+        <label><input type="radio" name="plan"> Pro</label>
+        <label><input type="radio" name="plan"> Enterprise</label><br><br>
+
+        <label>Checkboxes:</label><br>
+        <label><input type="checkbox"> Subscribe to updates</label>
+        <label><input type="checkbox"> I agree to the terms</label><br><br>
+
+        <label>Select (not input, but common): 
+            <select>
+                <option>Choose...</option>
+            </select>
+        </label>
+    </fieldset>
+
+    <!-- Text Areas & Datalists -->
+    <fieldset>
+        <legend>Text Areas & Datalists</legend>
+        <label>Textarea:</label><br>
+        <textarea placeholder="Write something..."></textarea><br><br>
+
+        <label>Text with Datalist (Country): 
+            <input list="countries" placeholder="Start typing...">
+            <datalist id="countries">
+                <option value="Rwanda">
+                <option value="Kenya">
+                <option value="Uganda">
+                 <option value="sudan"></option>
+            </datalist>
+        </label>
+    </fieldset>
+
+    <!-- Color & Files -->
+    <fieldset>
+        <legend>Color & Files</legend>
+        <label>Color: <input type="color" value="#00aaff"></label><br>
+        <label>File Upload: <input type="file"> No file chosen</label>
+    </fieldset>
+
+    <!-- Hidden & Readonly -->
+    <fieldset>
+        <legend>Hidden & Readonly</legend>
+        <label>Read-only: <input type="text" value="INV-000123" readonly></label><br>
+        <label>Disabled: <input type="text" value="Disabled example" disabled></label>
+    </fieldset>
+
+    <!-- Buttons -->
+    <fieldset>
+        <legend>Buttons</legend>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button">Plain Button</button>
+    </fieldset>
+    </form>
+  
+
+
+     </form>
   </body>
 </html>
