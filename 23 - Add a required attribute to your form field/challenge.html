@@ -7,13 +7,19 @@
     <!-- Add a required attribute to a form field. -->
     <!-- Make the name and email fields compulsory -->
     <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" /><br />
+      <fieldset>
+        <legend>name:</legend>
+ <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      </fieldset>
+     
+<fieldset>
+  <legend>email:</legend>
+ <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+</fieldset>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" /><br />
-
-      <button type="submit">Submit</button>
+           <button type="submit">Submit</button>
     </form>
   </body>
 </html>
